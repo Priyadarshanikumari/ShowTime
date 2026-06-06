@@ -7,12 +7,13 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import MovieDetails from "./pages/MovieDetails";
 import Booking from "./pages/Booking";
+import BookingDetails from "./pages/BookingDetails";
 
 function App() {
   
   return (
     <>
-      //git changes
+      
       <Routes>
         <Route path="/" element={<Signup />} />
 
@@ -34,6 +35,10 @@ function App() {
         <Route
           path="/booking/:id"
           element={<Booking />}
+        />
+        <Route
+          path="/booking-details"
+          element={<BookingDetails />}
         />
       </Routes>
     </>

@@ -79,6 +79,27 @@
   font-size:15px;
 }
 
+.booking-panel{
+  position: absolute;
+  right: 40px;
+  top: 86px;
+  width: 320px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  z-index: 1000;
+}
+
+.booking-panel h4{
+  margin: 0 0 8px 0;
+}
+
+.booking-panel p{
+  margin: 6px 0;
+  color: #333;
+}
+
 /* Pages */
 .container{
   padding:20px;
@@ -126,12 +147,31 @@
 
 .details,
 .booking{
-  text-align:center;
   padding:30px;
 }
 
-.details img{
-  width:300px;
+.details-container{
+  display:flex;
+  gap:40px;
+  align-items:flex-start;
+  justify-content:center;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.details-left,
+.details-right{
+  flex:1;
+}
+
+.details-left{
+  max-width:420px;
+  text-align:center;
+}
+
+.details-left img{
+  width:100%;
+  max-width:360px;
   border-radius:10px;
 }
 
@@ -142,13 +182,46 @@
 }
 
 .booking button,
-.details button{
+.details button,
+.book-now-btn,
+.back-btn{
   padding:10px 20px;
   background:#d81f26;
   color:white;
   border:none;
   border-radius:5px;
   cursor:pointer;
+}
+
+.back-btn{
+  background:#ddd;
+  color:#222;
+}
+
+.booking button:hover,
+.details button:hover,
+.book-now-btn:hover{
+  background:#b81a1f;
+  transition: background 0.3s ease;
+}
+
+.showtime-info{
+  background:#f0f0f0;
+  padding:20px;
+  border-radius:8px;
+  margin:20px 0;
+  border-left:4px solid #d81f26;
+}
+
+.showtime-info h3{
+  color:#d81f26;
+  margin-bottom:12px;
+}
+
+.showtime-info p{
+  font-size:16px;
+  margin:8px 0;
+  color:#333;
 }
 /* Signup & Login */
 body{
