@@ -1,16 +1,140 @@
-# React + Vite
+# 🎬 ShowTime – Movie Ticket Booking Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShowTime is a responsive Movie Ticket Booking Web Application developed using React.js and Vite. It enables users to browse movies, search titles, view movie details, book tickets, apply discount offers, purchase gift cards, and manage bookings through a clean and user-friendly interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 https://priyadarshanikumari.github.io/ShowTime/
 
-## React Compiler
+## 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏠 Home Page
 
-## Expanding the ESLint configuration
+![Home](./src/screenshot/home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🏷️ Offers Page
+
+![Offers](./src/screenshot/offer.png)
+
+---
+
+### 🎁 Gift Cards
+
+![Gift Cards](./src/screenshot/giftcard.png)
+
+---
+
+## ✨ Features
+
+- 🔐 User Signup & Login
+- 🎬 Browse Latest Movies
+- 🔍 Search Movies
+- 📄 Movie Details Page
+- 🎟️ Seat Selection & Ticket Booking
+- 📅 Booking History
+- 🏷️ Apply Discount Offers
+- 🎁 Purchase Gift Cards
+- 👤 User Profile
+- 🤖 AI Chatbot Assistant
+- 💾 Local Storage Support
+- 📱 Responsive Design
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Router DOM
+- React Icons
+- Local Storage
+- Git & GitHub
+- GitHub Pages
+
+---
+
+## 📂 Project Structure
+
+```
+src
+│
+├── components
+├── pages
+├── data
+├── styles
+├── utils
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Priyadarshanikumari/ShowTime.git
+```
+
+Go to project folder
+
+```bash
+cd ShowTime
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the project
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+---
+
+## 📌 Future Improvements
+
+- Online Payment Integration
+- Real-Time Seat Availability
+- Movie Trailer Integration
+- Backend Authentication
+- Firebase / MongoDB Integration
+- Email Ticket Confirmation
+- Dark Mode
+
+---
+
+## 👩‍💻 Author
+
+**Priyadarshani Kumari**
+
+- GitHub: https://github.com/Priyadarshanikumari
+- LinkedIn: *www.linkedin.com/in/priyadarshani-kumari-859b432b0*
+
+---
+
+## ⭐ Support
+
+If you like this project, don't forget to **Star ⭐ the repository**.
