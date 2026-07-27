@@ -6,16 +6,24 @@ import giftCards from "../data/giftCards";
 
 function GiftCards() {
   return (
-    <div className="container">
+    <div className="page-container">
+
       <Navbar />
 
-      <h1 className="page-title">🎁 Gift Cards</h1>
+      <main className="page-content">
 
-      <div className="giftcards-container">
-        {giftCards.map((gift) => <GiftCard key={gift.id} gift={gift} />)}
-      </div>
+        <h1 className="page-title">🎁 Gift Cards</h1>
+
+        <div className="giftcards-container">
+          {giftCards.map((card) => (
+            <GiftCard key={card.id} card={card} />
+          ))}
+        </div>
+
+      </main>
 
       <Footer />
+
     </div>
   );
 }
