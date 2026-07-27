@@ -1,33 +1,34 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 
-function GiftCard({ gift }) {
+function GiftCard({ card }){
 
-  const [purchased, setPurchased] = useState(false);
+const [purchased,setPurchased]=useState(false);
 
-  const handleBuyGiftCard = () => {
+const handleBuyGiftCard=()=>{
+setPurchased(true);
+};
 
-    setPurchased(true);
+return(
 
-    alert("🎉 Gift Card Purchased Successfully");
+<div className="gift-card">
 
-  };
+<div className="gift-price">₹ {card.price}</div>
 
-  return (
+<h2>{card.title}</h2>
 
-    <div className="gift-card">
-      <div className="gift-price"> ₹ {gift.price} </div>
+<p>{card.desc}</p>
 
-      <h2>{gift.title}</h2>
-      <p>{gift.desc}</p>
-      <p className="gift-validity"> Validity : {gift.validity}</p>
-      <button className="gift-btn" onClick={handleBuyGiftCard} disabled={purchased} >
-        {purchased ? "Purchased" : "Buy Now"} </button>
-      {purchased && (
-        <p className="gift-success"> ✅ Gift Card Purchased Successfully </p>
-      )}
-    </div>
+<p className="gift-validity">Validity : {card.validity}</p>
 
-  );
+<button className="gift-btn" onClick={handleBuyGiftCard} disabled={purchased}>
+{purchased?"Purchased":"Buy Now"}
+</button>
+
+{purchased&&<p className="gift-success">✅ Gift Card Purchased Successfully</p>}
+
+</div>
+
+);
 
 }
 
