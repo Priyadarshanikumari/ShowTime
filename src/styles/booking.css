@@ -1,0 +1,122 @@
+/* ===========================
+   Booking Styles
+   Used in: Booking.jsx
+=========================== */
+
+/* Booking Page */
+
+.booking{
+    max-width:1100px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* Ticket Input */
+
+.booking input{
+    width:80px;
+    padding:8px;
+    text-align:center;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+}
+
+/* Booking Buttons */
+
+.booking button{
+    padding:10px 20px;
+    background:#d81f26;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking button:hover{
+    background:#b71c1c;
+}
+
+/* Back Button */
+
+.back-btn{
+    background:#ddd !important;
+    color:#222 !important;
+}
+
+.back-btn:hover{
+    background:#c7c7c7 !important;
+}
+
+/* Selected Showtime */
+
+.showtime-info{
+    background:#f0f0f0;
+    padding:20px;
+    margin:20px 0;
+    border-left:4px solid #d81f26;
+    border-radius:8px;
+}
+
+.showtime-info h3{
+    color:#d81f26;
+    margin-bottom:12px;
+}
+
+.showtime-info p{
+    margin:8px 0;
+    color:#333;
+    font-size:16px;
+}
+
+/* Total Amount */
+
+.booking h2{
+    margin:20px 0;
+    color:#222;
+}
+
+/* Offer */
+
+.booking h3{
+    margin:10px 0;
+}
+
+/* Confirm Booking Button */
+
+.booking-btns{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+/* Booking Amount */
+
+.final-amount{
+    color:#d81f26;
+}
+
+.offer-title{
+    color:green;
+}
+
+.discount{
+    color:red;
+}
+
+/* Confirm Button Container */
+
+.confirm-btn{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+.success-msg{
+    color:#28a745;
+    font-weight:600;
+    text-align:center;
+    margin:15px 0;
+}

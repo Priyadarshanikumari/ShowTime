@@ -1,0 +1,38 @@
+.profile-page{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.profile-card{
+    width:380px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.profile-card h2{
+    text-align:center;
+    color:#d81f26;
+    margin-bottom:20px;
+}
+
+.profile-card p{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0;
+    font-size:17px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.edit-icon{
+    color:#d81f26;
+    cursor:pointer;
+}
+
+.edit-icon:hover{
+    color:#b71c1c;
+}

@@ -1,66 +1,81 @@
-import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import React,{useState} from "react";
+import {useNavigate,Link} from "react-router-dom";
 import SignupNavbar from "../components/SignupNavbar";
 
-function Signup() {
-  const navigate = useNavigate();
+function Signup(){
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const navigate=useNavigate();
 
-  const signup = (e) => {
-    e.preventDefault();
+const [name,setName]=useState("");
+const [email,setEmail]=useState("");
+const [phone,setPhone]=useState("");
+const [password,setPassword]=useState("");
 
-    const user = {
-      name,
-      email,
-      password,
-    };
+const [message,setMessage]=useState("");
+const [success,setSuccess]=useState(false);
 
-    localStorage.setItem("user", JSON.stringify(user));
+const signup=(e)=>{
 
-    alert("Signup Successful");
-    navigate("/login");
-  };
+e.preventDefault();
 
-  return (
-    <>
-    
-      <SignupNavbar />
+const user={
+name,
+email,
+phone,
+password,
+};
 
-      <div className="auth-container">
-        <h1>Sign Up</h1>
+localStorage.setItem("user",JSON.stringify(user));
 
-        <form onSubmit={signup}>
-          <input
-            type="text"
-            placeholder="Enter Name"
-            onChange={(e) => setName(e.target.value)}
-          />
+setMessage("✅ Signup Successful");
+setSuccess(true);
 
-          <input
-            type="email"
-            placeholder="Enter Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
+setTimeout(()=>{
+navigate("/login");
+},1000);
 
-          <input
-            type="password"
-            placeholder="Enter Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
+};
 
-          <button type="submit">Signup</button>
-        </form>
+return(
+<>
 
-        <p>
-          Already have an account?
-          <Link to="/login"> Login</Link>
-        </p>
-      </div>
-    </>
-  );
+<SignupNavbar/>
+
+<div className="auth-container">
+
+<h1>Sign Up</h1>
+
+{message&&(
+<p className={success?"success-msg":"error-msg"}>
+{message}
+</p>
+)}
+
+<form onSubmit={signup}>
+
+<input type="text" placeholder="Enter Name" value={name} onChange={(e)=>setName(e.target.value)}/>
+
+<input type="email" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+
+<input type="tel" placeholder="Enter Phone Number" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
+
+<input type="password" placeholder="Enter Password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+
+<button type="submit">Signup</button>
+
+</form>
+
+<p>
+Already have an account?
+<Link to="/login"> Login</Link>
+</p>
+
+</div>
+
+</>
+
+);
+
 }
 
 export default Signup;

@@ -1,0 +1,95 @@
+/* ===========================
+   Movie Details Styles
+   Used in: MovieDetails.jsx
+=========================== */
+
+/* Main Container */
+
+.movie-details{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* Details Layout */
+
+.details-container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+/* Left Section */
+
+.details-left{
+    flex:1;
+    max-width:420px;
+    text-align:center;
+}
+
+/* Movie Poster */
+
+.details-left img{
+    width:100%;
+    max-width:360px;
+    border-radius:10px;
+}
+
+/* Right Section */
+
+.details-right{
+    flex:1;
+}
+
+/* Movie Title */
+
+.details-right h1{
+    margin-bottom:15px;
+    color:#222;
+}
+
+/* Movie Information */
+
+.details-right p{
+    margin:10px 0;
+    color:#444;
+    line-height:1.6;
+    font-size:16px;
+}
+
+/* Buttons */
+
+.details button,
+.book-now-btn{
+    padding:10px 20px;
+    background:#d81f26;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.details button:hover,
+.book-now-btn:hover{
+    background:#b71c1c;
+}
+
+/* Back Button */
+
+.back-btn{
+    padding:10px 20px;
+    background:#ddd;
+    color:#222;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#c7c7c7;
+}

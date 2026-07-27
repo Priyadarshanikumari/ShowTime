@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import movies from '../data/movies'
 import ShowtimeSelector from '../components/ShowtimeSelector'
 import SeatSelector from '../components/SeatSelector'
+import Navbar from "../components/NavBar";
 
 function MovieDetails() {
   const { id } = useParams()
@@ -56,13 +57,12 @@ function MovieDetails() {
   }
 
   return (
+    <>
+     <Navbar />
     <div className="details">
       <div className="details-container">
         <div className="details-left">
-          <img
-            src={movie.image}
-            alt={movie.title}
-          />
+          <img src={movie.image} alt={movie.title} />
 
           <h1>{movie.title}</h1>
 
@@ -81,25 +81,15 @@ function MovieDetails() {
           />
 
           <div style={{ marginTop: 16, display: 'flex', gap: 12, justifyContent: 'center' }}>
-            <button 
-              onClick={handleOpenSeatSelector}
-              className="book-now-btn"
-            >
-              Select Seats
-            </button>
-
-            <button 
-              onClick={handleBookNow}
-              className="book-now-btn"
-            >
-              Book Now
-            </button>
+            <button onClick={handleOpenSeatSelector} className="book-now-btn">Select Seats</button>
+            <button onClick={handleBookNow} className="book-now-btn">Book Now</button>
           </div>
 
           <SeatSelector open={showSeatModal} onClose={() => setShowSeatModal(false)} onConfirm={handleConfirmSeats} occupiedSeats={occupiedSeats} />
         </div>
       </div>
     </div>
+    </>
   )
 }
 

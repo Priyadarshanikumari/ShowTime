@@ -1,0 +1,98 @@
+/* ===========================
+   Gift Cards Styles
+   Used in:
+   - GiftCards.jsx
+   - GiftCard.jsx
+=========================== */
+
+/* Gift Cards Container */
+
+.gift-container,
+.giftcards-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:40px;
+}
+
+/* Gift Card */
+
+.gift-card{
+    width:320px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.gift-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Price */
+
+.gift-price{
+    display:inline-block;
+    background:#d81f26;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Title */
+
+.gift-card h2{
+    color:#d81f26;
+    margin-bottom:12px;
+}
+
+/* Description */
+
+.gift-card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Validity */
+
+.gift-validity{
+    margin:15px 0;
+    font-weight:bold;
+}
+
+/* Button */
+
+.gift-btn{
+    width:100%;
+    padding:12px;
+    background:#d81f26;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.gift-btn:hover{
+    background:#b71c1c;
+}
+
+.gift-btn:disabled{
+    background:green;
+    cursor:not-allowed;
+}
+
+/* Success */
+
+.gift-success{
+    margin-top:12px;
+    color:green;
+    font-weight:bold;
+}

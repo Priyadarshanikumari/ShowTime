@@ -4,6 +4,14 @@ import bhootBangla from "../assets/images/BhootBangla.jpg";
 import pushpa2 from "../assets/images/Pushpa2.jpg";
 import dhurandhar from "../assets/images/Dhurandhar.jpg";
 import daadiKiShadi from "../assets/images/DaadiKiShadi.jpg";
+import chhaava from "../assets/images/Chhaava.jpg";
+import housefull5 from "../assets/images/Housefull5.jpg";
+import border2 from "../assets/images/Border2.jpg";
+import war2 from "../assets/images/War2.jpg";
+import dacoitALoveStory from "../assets/images/Dacoit.jpg";
+import alpha from "../assets/images/Alpha.jpg";
+import sikandar from "../assets/images/Sikandar.jpg";
+
 
 const movies = [
   {
@@ -53,7 +61,64 @@ const movies = [
     price: 250,
     image: daadiKiShadi,
     desc: "Comedy Movie"
-  }
+  },
+  {
+    id: 7,
+    title: "Chhaava",
+    rating: 9.5,
+    price: 350,
+    image: chhaava,
+    desc: "Historical Movie"
+  },
+  {
+    id: 8,
+    title: "Housefull 5",
+    rating: 7.5,
+    price: 250,
+    image: housefull5,
+    desc: "Comedy Movie"
+  },
+{
+    id: 9,
+    title: "Border 2",
+    rating: 8,
+    price: 250,
+    image: border2,
+    desc: "Action Movie"
+  },
+{
+    id: 11,
+    title: "War 2",
+    rating: 9.7,
+    price: 300,
+    image: war2,
+    desc: "Action Movie"
+  },
+{
+    id:  12,
+    title: "Dacoit-A love story",
+    rating: 9.1,
+    price: 250,
+    image: dacoitALoveStory,
+    desc: "Love Story Movie"
+  },
+{
+    id: 13,
+    title: "Alpha",
+    rating: 9.2,
+    price: 350,
+    image: alpha,
+    desc: "Comedy Movie"
+  },
+{
+    id: 14,
+    title: "Sikandar",
+    rating: 8.9,
+    price: 250,
+    image: sikandar,
+    desc: "Movie"
+  },
+
 
 ];
 

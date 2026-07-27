@@ -1,0 +1,81 @@
+/* ===========================
+   Booking Details
+=========================== */
+
+.booking-details{
+    max-width:900px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.booking-details-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.header-space{
+    width:80px;
+}
+
+.no-booking{
+    padding:40px;
+    text-align:center;
+}
+
+/* Booking Card */
+
+.booking-card{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    margin-bottom:25px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.booking-image{
+    width:220px;
+}
+
+.booking-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.booking-content{
+    flex:1;
+}
+.success-msg{
+    width:90%;
+    margin:15px auto;
+    padding:12px;
+    text-align:center;
+    background:#d4edda;
+    color:#155724;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.clear-btn-box{
+    text-align:center;
+    margin:30px 0;
+}
+
+.clear-btn{
+    padding:12px 25px;
+    border:none;
+    background:#d81f26;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.clear-btn:hover{
+    background:#b5151b;
+}

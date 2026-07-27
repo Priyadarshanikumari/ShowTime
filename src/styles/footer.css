@@ -1,0 +1,48 @@
+/* ===========================
+   Footer Styles
+   Used in:
+   - Footer.jsx
+=========================== */
+
+.footer{
+    background:#1f2533;
+    color:#fff;
+    text-align:center;
+    padding:20px 40px;
+    margin-top:auto;
+}
+
+.footer-top h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.footer-top p{
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+.footer hr{
+    margin:15px 0;
+    border:1px solid #444;
+}
+
+.footer-contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin:15px 0;
+}
+
+.footer-contact span{
+    color:#ddd;
+    font-size:16px;
+}
+
+.copyright{
+    margin-top:10px;
+    color:#bbb;
+    font-size:14px;
+}
